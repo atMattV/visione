@@ -1,6 +1,7 @@
 # Visione
 
 A local-first AI creative production suite for consumer GPUs.
+Read the full documentation [here](https://www.notion.so/Visione-Technical-Documentation-3194a74185bb8015b154e234606497e2)
 
 ---
 
@@ -41,9 +42,7 @@ Components share models where possible. Image generation models are reused acros
 ---
 
 ## Status
-
-Code-complete. Final UI design pass in progress.
-
+Code-complete. Release w/c 09/03/26</li>
 ---
 
 ## License
