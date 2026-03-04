@@ -42,8 +42,14 @@ Components share models where possible. Image generation models are reused acros
 ---
 
 ## Status
-Code-complete. Release w/c 09/03/26</li>
----
+Code-complete. 
+<ul>
+<li>Documentation kick-off: January 29, 2026</li>
+<li>Development kick-off: February 8, 2026</li>
+<li>Development finished: March 4, 2026 (after 79 sessions on Claude Code and ~300 hours)</li>
+<li>Release: Week of March 9, 2026</li>
+<li>Insights and Dashboard: Week of March 9, 2026</li>  
+</ul>
 
 ## License
 
