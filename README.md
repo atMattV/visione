@@ -9,7 +9,7 @@ Read the full documentation [here](https://www.notion.so/Visione-Technical-Docum
 
 Visione is a self-contained desktop application for AI-driven creative production. It runs entirely on local hardware: no cloud services, no external APIs, no subscriptions. Every model runs on-device; inference never leaves your machine.
 
-The pipeline covers the full creative arc: text-to-image and video generation, retouching, stylization, enhancement, sound design, and final assembly — all within a single application.
+The pipeline covers the full creative arc: text-to-image and video generation, retouching, stylization, enhancement, and sound design, all within a single application.
 
 **Stack:** Python 3.12 + FastAPI + SSE · React 18 + TypeScript + Zustand · Tauri 2 desktop shell · ComfyUI headless for video inference · PyTorch 2.7 + CUDA
 
@@ -25,7 +25,6 @@ The pipeline covers the full creative arc: text-to-image and video generation, r
 | **Enhance** | Image and video enhancement — upscaling, denoising, frame interpolation |
 | **Storyboard** | 12-stage AI-assisted filmmaking pipeline: multi-agent concept development, character library, shot generation, and export |
 | **Sound Studio** | Music generation, voiceover (preset, cloned, and voice-designed), and video-to-audio foley |
-| **Video Editor** | Lightweight timeline for assembling clips, audio, and exports |
 | **Characters** | Persistent character library with 5-shot reference generation for cross-shot consistency |
 | **Gallery** | Unified asset browser across all components |
 
@@ -41,17 +40,11 @@ Components share models where possible. Image generation models are reused acros
 
 ---
 
-## Status
-Code-complete. 
-<ul>
-<li>Documentation kick-off: January 29, 2026</li>
-<li>Development kick-off: February 8, 2026</li>
-<li>Development finished: March 4, 2026 (after 79 sessions on Claude Code and ~300 hours)</li>
-<li>Final QA: March 5, 2026 onward</li>
-<li>Release: Week of March 9, 2026</li>
-<li>Insights and Dashboard: Week of March 9, 2026</li>  
-</ul>
+## Weights and Installer
 
+[Here](https://huggingface.co/atMrMattV/Visione) >> COMING week of March 9th 2026
+
+---
 ## License
 
 MIT
