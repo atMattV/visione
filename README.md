@@ -28,6 +28,44 @@ The pipeline covers the full creative arc: text-to-image and video generation, r
 | **Characters** | Persistent character library with 5-shot reference generation for cross-shot consistency |
 | **Gallery** | Unified asset browser across all components |
 
+## Models
+
+| Model | Purpose |
+|-------|---------|
+| Z-Image Turbo FP8 | Image generation |
+| Z-Image Qwen 3 4B | Text encoder |
+| Z-Image VAE | VAE | 
+| Z-Image LoRAs (38) | Style presets | 
+| Flux2 Klein 4B FP8 | Image gen / editing |
+| Flux2 Klein 9B BF16 | Image gen/ High-quality editing | 
+| Flux2 VAE | VAE |
+| ControlNet Union 2.1 | Structural conditioning (Retexture) | 
+| Patina LoRAs (21) | Stylization presets | 
+| SPAN 4x Upscaler | Image upscaling |
+| SCUNet Denoiser | Image denoising | 
+| CodeFormer | Face enhancement | 
+| LTX-2.3 22B FP8 | Video generation | 
+| LTX-2 Gemma 3 12B FP4 | Video text encoder |
+| LTX-2.3 22B Distilled LoRA | Fast video sampling | 
+| LTX-2.3 Spatial Upscaler | 2× video upscale | 
+| LTX-2.3 Audio VAE | Audio generation |
+| VEnhancer FP16 | Video enhancement |
+| SeedVR2 3B FP8 | Video upscaling | 
+| RIFE v4.26 | Frame interpolation |
+| ACE-Step SFT + Base | Music generation | 
+| ACE-Step LM 1.7B | Music language model | 
+| ACE-Step VAE + TextEnc | Music pipeline | 
+| Qwen3-TTS 1.7B (3 variants) | Text-to-speech | 
+| HunyuanVideo-Foley XL | Video-to-audio | 
+| Wan 2.1 T2V 1.3B | StyleMaster backbone | 
+| StyleMaster checkpoints | Style injection weights | 
+| CLIP ViT-H-14 | Style extraction | 
+| IS-Net (rembg) | Background removal (CPU) | 
+| LatentSync 1.6 | Lip sync (quality) | 
+| MuseTalk 1.5 | Lip sync (fast) | 
+| InsightFace buffalo_l | Face detection/swap | 
+| Inswapper_128.onnx | Face swap model | 
+
 ---
 
 ## Architecture
