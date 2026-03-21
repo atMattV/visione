@@ -12,7 +12,9 @@
 <p align="center">
   <a href="https://www.notion.so/Visione-Technical-Documentation-3194a74185bb8015b154e234606497e2">Documentation</a>
   &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="https://github.com/atMattV/visione">GitHub</a>
+  <a href="https://github.com/atMattV/visione](https://huggingface.co/atMrMattV/Visione)">Huggingface</a>
+  &nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="https://huggingface.co/atMrMattV/Visione/resolve/main/Visione_0.4.0_x64-setup.exe?download=true">Download Visione for free</a>
 </p>
 
 ---
