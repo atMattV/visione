@@ -14,8 +14,27 @@
   &nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="https://github.com/atMattV/visione](https://huggingface.co/atMrMattV/Visione)">Huggingface</a>
   &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="https://huggingface.co/atMrMattV/Visione/resolve/main/Visione_0.4.0_x64-setup.exe?download=true">Download Visione for free</a>
+  <a href="https://huggingface.co/atMrMattV/Visione/resolve/main/Visione_0.5.0_x64-setup.exe?download=true">Download Visione for free</a>
 </p>
+
+---
+
+## April 9 — v0.5.0
+
+  ### Security
+  - Bound the API server to `127.0.0.1`
+  - Added URL scheme validation to the open-external endpoint — only `http://` and `https://` accepted.
+  - Added domain allowlist to CivitAI LoRA downloads — restricted to `civitai.com` and its subdomains.
+  - Pinned FaceFusion auto-clone to v3.6.0 — no longer pulls an unpinned HEAD on first use.
+  - Added path containment checks to all video path inputs — paths are validated against allowed directories.
+  - Added `settings.json` to `.gitignore` — prevents accidental commit of the CivitAI API token.
+  - Narrowed Tauri filesystem read scope — restricted to `generations/`, `models/styles/`, and `models/editing/luts/`.
+
+  ### Setup
+  - The installer now runs environment setup automatically post-install — creates a project-local `.venv`, installs the JamePeng `llama-cpp-python` CUDA wheel, all requirements, and both sidecars. No manual setup step required.
+
+  ### Internal
+  - Removed stale MediaPipe dependency check from Settings — pose tracking was removed in v0.4.0.
 
 ---
 
