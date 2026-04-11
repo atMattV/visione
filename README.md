@@ -14,10 +14,53 @@
   &nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="https://github.com/atMattV/visione](https://huggingface.co/atMrMattV/Visione)">Huggingface</a>
   &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="https://huggingface.co/atMrMattV/Visione/resolve/main/Visione_0.5.0_x64-setup.exe?download=true">Download Visione for free</a>
+  <a href="https://huggingface.co/atMrMattV/Visione/resolve/main/Visione_0.6.1_x64-setup.exe?download=true">Download Visione for free</a>
 </p>
 
 ---
+
+## Changelog:
+
+
+# April 11 — v0.6.1
+
+## Quality Improvements
+
+- **Contextual Edit** — Inference now runs at near-native resolution, matching the model's evaluation parameters. Output quality is significantly improved: sharper detail, better texture fidelity, and more accurate style transfer compared to the previous downscaled approach.
+
+## Stability
+
+- Contextual Edit automatically falls back to a lower resolution if the current hardware cannot complete generation at full quality, ensuring the job always completes rather than crashing.
+
+
+# April 10 — v0.6.0
+
+Couldn't sleep last night, so I figured I migth as well rollout a few more changes:
+
+## New Features
+- **Multilingual support** — Full internationalization across the entire application. 5 languages supported: English, Italian, Spanish, French, and German. All UI text, status messages, and tooltips are now translatable.
+
+## Bug Fixes
+- Fixed a crash in Storyboard drag-to-reorder caused by a function name typo.
+- Fixed missing translation keys for Settings toggles and status indicators.
+- Fixed missing accents in Italian, Spanish, French, and German translations.
+
+## Security
+- Hardened prompt processing — blocked builtins access to prevent code injection from LLM responses.
+- Hardened text encoder — restricted namespace to only allowed functions.
+
+## Stability
+- Added thread-safe access to generation queue and subscriber list.
+- Added thread-safe model download tracking with atomic operations.
+- Added thread-safe singleton initialization for Retouch engine.
+- Added thread-safe initialization for fallback language model.
+- Capped Sound Studio history to 100 items to prevent unbounded memory growth.
+
+## Internal
+- Added thread safety test suite with 4 validation tests.
+- Removed 12 obsolete backup files.
+- Pinned diffusers to tested commit for reproducibility.
+
 
 ## April 9 — v0.5.0
 
